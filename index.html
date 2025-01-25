@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Academic Portfolio of Dr. Sanket Mishra" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Sanket Mishra | Academic Portfolio</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Boxicons (optional icons) -->
+    <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+    >
+</head>
+<body id="body">
+<!-- ============ MARQUEE / NEWS TICKER ============ -->
+<div class="news-ticker">
+    <div class="news-ticker__content">
+        <!-- Repeat lines if you want multiple news items. The content
+             will scroll continuously from right to left. -->
+        <span>Streamlined Data Pipeline for Real-Time Threat Detection and Model Inference presented at COMSNETS Workshop '25 - SAMAT</span>
+    </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo" onclick="loadSection('about')">
+            <strong>Dr. Sanket Mishra</strong>
+        </a>
+
+        <!-- HAMBURGER MENU ICON (visible on mobile) -->
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-menu"></i>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link" onclick="loadSection('about')">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link" onclick="loadSection('blog')">Blog</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link" onclick="loadSection('achievements')">Achievements</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link" onclick="loadSection('interests')">Interests</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link" onclick="loadSection('phd')">PhD</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link" onclick="loadSection('publications')">Publications</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link" onclick="loadSection('teaching')">Teaching</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link" onclick="loadSection('students')">Students</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link" onclick="loadSection('contact')">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Theme Toggle Icon -->
+        <div class="theme-toggle">
+            <i
+                    class="bx bx-moon change-theme"
+                    id="theme-button"
+                    onclick="toggleDarkMode()"
+            ></i>
+        </div>
+    </nav>
+</header>
+
+<!-- ============ MAIN CONTENT ============ -->
+<main class="main">
+    <div id="content-container" class="content-container">
+        <!-- Content from each section's HTML file will be dynamically injected here.
+             By default, we might load 'about.html' or you can leave it empty. -->
+    </div>
+</main>
+
+<!-- ============ FLOATING BOTTOM NAV (optional) ============ -->
+<div class="floating-nav">
+    <button onclick="loadSection('about')" title="About">
+        <i class="bx bx-user"></i>
+    </button>
+    <button onclick="loadSection('blog')" title="Blog">
+        <i class="bx bx-news"></i>
+    </button>
+    <button onclick="loadSection('achievements')" title="Achievements">
+        <i class="bx bx-trophy"></i>
+    </button>
+    <button onclick="loadSection('phd')" title="PhD">
+        <i class="bx bx-book"></i>
+    </button>
+    <button onclick="loadSection('publications')" title="Publications">
+        <i class="bx bx-file"></i>
+    </button>
+    <button onclick="loadSection('teaching')" title="Teaching">
+        <i class="bx bx-chalkboard"></i>
+    </button>
+    <button onclick="loadSection('contact')" title="Contact">
+        <i class="bx bx-envelope"></i>
+    </button>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+    <div class="footer__container container">
+        <h1 class="footer__title">Dr. Sanket Mishra</h1>
+        <ul class="footer__list">
+            <li><a href="#" onclick="scrollToTop()">Back to top</a></li>
+            <li><a href="#" onclick="loadSection('about')">About</a></li>
+            <li><a href="#" onclick="loadSection('publications')">Publications</a></li>
+        </ul>
+        <span class="footer__copy">
+        &#169; 2025 Sanket Mishra, Ph.D. | All Rights Reserved
+      </span>
+    </div>
+</footer>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="script.js"></script>
+</body>
+</html>
