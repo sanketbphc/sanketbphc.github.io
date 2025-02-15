@@ -1,134 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark-mode">
 <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Academic Portfolio of Dr. Sanket Mishra" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dr. Sanket Mishra | Academic Portfolio</title>
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Boxicons (optional icons) -->
-    <link
-            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-            rel="stylesheet"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dr. Sanket Mishra - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
 </head>
-<body id="body">
-<!-- ============ MARQUEE / NEWS TICKER ============ -->
-<div class="news-ticker">
-    <div class="news-ticker__content">
-        <!-- Repeat lines if you want multiple news items. The content
-             will scroll continuously from right to left. -->
-        <span>Streamlined Data Pipeline for Real-Time Threat Detection and Model Inference presented at COMSNETS Workshop '25 - SAMAT</span>
-    </div>
-</div>
-
-<!-- ============ HEADER ============ -->
-<header class="header">
-    <nav class="nav container">
-        <a href="#" class="nav__logo" onclick="loadSection('about')">
-            <strong>Dr. Sanket Mishra</strong>
-        </a>
-
-        <!-- HAMBURGER MENU ICON (visible on mobile) -->
-        <div class="nav__toggle" id="nav-toggle">
-            <i class="bx bx-menu"></i>
+<body>
+<header>
+    <nav>
+        <div class="logo">Dr. Sanket Mishra</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="publications.html">Publications</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="contact.html">Contact</a>
+            <button id="theme-toggle">
+                <i class="fas fa-sun"></i>
+            </button>
         </div>
-
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#" class="nav__link" onclick="loadSection('about')">About</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link" onclick="loadSection('blog')">Blog</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link" onclick="loadSection('achievements')">Achievements</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link" onclick="loadSection('interests')">Interests</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link" onclick="loadSection('phd')">PhD</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link" onclick="loadSection('publications')">Publications</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link" onclick="loadSection('teaching')">Teaching</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link" onclick="loadSection('students')">Students</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link" onclick="loadSection('contact')">Contact</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Theme Toggle Icon -->
-        <div class="theme-toggle">
-            <i
-                    class="bx bx-moon change-theme"
-                    id="theme-button"
-                    onclick="toggleDarkMode()"
-            ></i>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
         </div>
     </nav>
 </header>
 
-<!-- ============ MAIN CONTENT ============ -->
-<main class="main">
-    <div id="content-container" class="content-container">
-        <!-- Content from each section's HTML file will be dynamically injected here.
-             By default, we might load 'about.html' or you can leave it empty. -->
-    </div>
+<main>
+    <!-- Hero / Profile Section -->
+    <section class="hero">
+        <div class="profile-container">
+            <!-- Replace with your actual photo -->
+            <img src="assets/images/profile.jpeg" alt="Dr. Sanket Mishra" class="profile-image"/>
+            <div class="profile-info">
+                <h1>Dr. Sanket Mishra</h1>
+                <p class="title">Associate Professor of Computer Science</p>
+                <p class="university">Manipal Institute of Technology (MAHE)</p>
+                <p class="location">
+                    <i class="fas fa-map-marker-alt"></i> Bengaluru, India
+                </p>
+
+                <div class="social-links">
+                    <a href="mailto:sanketmishra@live.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <!-- Replace '#' with your actual profile links -->
+                    <a href="#" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="#" title="ORCID"><i class="fab fa-orcid"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Ticker -->
+    <section class="news-ticker">
+        <h2>Latest News</h2>
+        <div class="ticker-content">
+            <div class="ticker-items">
+                <span>Invited Talk at IIIT Guwahati on Serverless Computing</span>
+                <span>New Publication Accepted in IEEE Access</span>
+                <span>Early Research Grant received for IoT-based Water Quality Monitoring</span>
+                <span>Presenting at International Conference 2025</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biography -->
+    <section class="biography">
+        <h2>Biography</h2>
+        <p>
+            I aspire to enhance my proficiency in data analytics by capitalizing on the
+            experience gained from my research in large-scale data analysis and the application
+            of cognitive methodologies. My objective is to progress within a research-oriented
+            institution committed to addressing real-world challenges.
+        </p>
+        <p>
+            Currently serving as an Associate Professor at Manipal Institute of Technology (MAHE),
+            my research interests include complex event processing, intrusion detection systems,
+            intelligent transportation systems, and adaptive machine learning. My work has been
+            published in reputed journals and conferences, and I am passionate about mentoring
+            students to excel in cutting-edge research.
+        </p>
+    </section>
 </main>
 
-<!-- ============ FLOATING BOTTOM NAV (optional) ============ -->
-<div class="floating-nav">
-    <button onclick="loadSection('about')" title="About">
-        <i class="bx bx-user"></i>
-    </button>
-    <button onclick="loadSection('blog')" title="Blog">
-        <i class="bx bx-news"></i>
-    </button>
-    <button onclick="loadSection('achievements')" title="Achievements">
-        <i class="bx bx-trophy"></i>
-    </button>
-    <button onclick="loadSection('phd')" title="PhD">
-        <i class="bx bx-book"></i>
-    </button>
-    <button onclick="loadSection('publications')" title="Publications">
-        <i class="bx bx-file"></i>
-    </button>
-    <button onclick="loadSection('teaching')" title="Teaching">
-        <i class="bx bx-chalkboard"></i>
-    </button>
-    <button onclick="loadSection('contact')" title="Contact">
-        <i class="bx bx-envelope"></i>
-    </button>
-</div>
-
-<!-- ============ FOOTER ============ -->
-<footer class="footer">
-    <div class="footer__container container">
-        <h1 class="footer__title">Dr. Sanket Mishra</h1>
-        <ul class="footer__list">
-            <li><a href="#" onclick="scrollToTop()">Back to top</a></li>
-            <li><a href="#" onclick="loadSection('about')">About</a></li>
-            <li><a href="#" onclick="loadSection('publications')">Publications</a></li>
-        </ul>
-        <span class="footer__copy">
-        &#169; 2025 Sanket Mishra, Ph.D. | All Rights Reserved
-      </span>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: sanketmishra@live.com</p>
+            <p>Office: Building A, Room 123</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="publications.html">Publications</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Dr. Sanket Mishra. All rights reserved.</p>
     </div>
 </footer>
 
-<!-- ============ SCRIPTS ============ -->
-<script src="script.js"></script>
+<button id="scroll-top" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="js/main.js"></script>
 </body>
 </html>

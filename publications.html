@@ -1,36 +1,135 @@
-<!-- publications.html -->
-<section class="section" id="publicationsSection">
-    <span class="section__subtitle">My Research</span>
-    <h2 class="section__title">Publications</h2>
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Publications - Dr. Sanket Mishra</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">Dr. Sanket Mishra</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="publications.html" class="active">Publications</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="contact.html">Contact</a>
+            <button id="theme-toggle">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
 
-    <p>Below are my publications in any order (the script will reorder them automatically).</p>
+<main>
+    <section class="publications">
+        <h1>Publications</h1>
 
-    <ol id="publications-list">
-        <li class="publication-item" data-date="2020">
-            <strong>Internet of things based occupancy detection...</strong><br/>
-            Journal of Computational & Theoretical Nanoscience (2020)<br/>
-            <a href="https://doi.org/10.1166/jctn.2020.8698" target="_blank">DOI: 10.1166/jctn.2020.8698</a>
-        </li>
+        <div class="publication-filters">
+            <button class="filter-btn active" data-type="all">All</button>
+            <button class="filter-btn" data-type="journal">Journal Articles</button>
+            <button class="filter-btn" data-type="conference">Conference Papers</button>
+            <button class="filter-btn" data-type="book">Book Chapters</button>
+        </div>
 
-        <li class="publication-item" data-date="2024-09">
-            <strong>Tachyon: Enhancing Stacked Models using Bayesian Optimization...</strong><br/>
-            Egyptian Informatics Journal (2024-09)<br/>
-            <a href="https://doi.org/10.1016/j.eij.2024.100520" target="_blank">DOI: 10.1016/j.eij.2024.100520</a>
-        </li>
+        <div class="timeline">
+            <!-- Journal Example -->
+            <div class="timeline-item" data-type="journal">
+                <div class="timeline-date">2025</div>
+                <div class="timeline-content">
+                    <h3>LIRAD: Lightweight Tree-Based Approaches...</h3>
+                    <p class="authors">Mishra, S., Anithakumari, T., Sahay, R., et al.</p>
+                    <p class="journal">Cluster Computing, 28(2), 1-23</p>
+                    <div class="paper-links">
+                        <a href="#" class="paper-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="#" class="paper-link"><i class="fas fa-link"></i> DOI</a>
+                        <a href="#" class="paper-link"><i class="fas fa-quote-right"></i> Cite</a>
+                    </div>
+                </div>
+            </div>
 
-        <li class="publication-item" data-date="2019">
-            <strong>An Evolutionary GA-Based Approach for Community Detection...</strong><br/>
-            IEEE Access (2019)<br/>
-            <a href="https://doi.org/10.1109/ACCESS.2019.2923965" target="_blank">DOI: 10.1109/ACCESS.2019.2923965</a>
-        </li>
+            <div class="timeline-item" data-type="journal">
+                <div class="timeline-date">2024</div>
+                <div class="timeline-content">
+                    <h3>IoT-enabled Early Detection of Diabetes...</h3>
+                    <p class="authors">Vaiyapuri, T., Alharbi, G., Dharmarajlu, S.M., Mishra, S., et al.</p>
+                    <p class="journal">IEEE Access (Accepted)</p>
+                    <div class="paper-links">
+                        <a href="#" class="paper-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="#" class="paper-link"><i class="fas fa-link"></i> DOI</a>
+                        <a href="#" class="paper-link"><i class="fas fa-quote-right"></i> Cite</a>
+                    </div>
+                </div>
+            </div>
 
-        <li class="publication-item" data-date="2022">
-            <strong>A Quality Aware Multiunit Double Auction Framework...</strong><br/>
-            IEEE Access (2022)<br/>
-            <a href="https://doi.org/10.1109/ACCESS.2022.3186095" target="_blank">DOI: 10.1109/ACCESS.2022.3186095</a>
-        </li>
+            <!-- Conference Example -->
+            <div class="timeline-item" data-type="conference">
+                <div class="timeline-date">2023</div>
+                <div class="timeline-content">
+                    <h3>Optimized Tree-Based Ensembles for Intrusion Detection...</h3>
+                    <p class="authors">Kumari, T. A., & Mishra, S.</p>
+                    <p class="journal">2023 IEEE Int. Conf. on Advanced Networks and Telecommunications Systems</p>
+                    <div class="paper-links">
+                        <a href="#" class="paper-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="#" class="paper-link"><i class="fas fa-link"></i> DOI</a>
+                        <a href="#" class="paper-link"><i class="fas fa-quote-right"></i> Cite</a>
+                    </div>
+                </div>
+            </div>
 
-        <!-- ...and so on for the rest of your publications.
-             The 'data-date' can be "YYYY", "YYYY-MM", "YYYY-MM-DD" etc. -->
-    </ol>
-</section>
+            <!-- Book Chapter Example -->
+            <div class="timeline-item" data-type="book">
+                <div class="timeline-date">2024</div>
+                <div class="timeline-content">
+                    <h3>Automated Detection of Water Quality...</h3>
+                    <p class="authors">Mishra, S., Anithakumari, T., & Jain, O.</p>
+                    <p class="journal">In Sustainable Farming through Machine Learning, CRC Press</p>
+                    <div class="paper-links">
+                        <a href="#" class="paper-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a href="#" class="paper-link"><i class="fas fa-link"></i> DOI</a>
+                        <a href="#" class="paper-link"><i class="fas fa-quote-right"></i> Cite</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more items from the CV as needed -->
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: sanketmishra@live.com</p>
+            <p>Office: Building A, Room 123</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Dr. Sanket Mishra. All rights reserved.</p>
+    </div>
+</footer>
+
+<button id="scroll-top" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
