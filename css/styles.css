@@ -342,11 +342,86 @@ footer {
         padding-left: 60px;
     }
     .timeline-date {
-        width: 60px;
-        padding-right: 10px;
+        position: relative;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        padding-left: 30px;
+    }
+    .timeline-circle {
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 10px;
+        height: 10px;
+        background: var(--primary-color);
+        border-radius: 50%;
     }
     .profile-container {
         flex-direction: column;
         text-align: center;
     }
+}
+
+
+.exp-logo {
+    width: 80px;
+    height: auto;
+    margin-top: 0.5rem;
+}
+
+/* Publications page controls */
+.publications-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.sort-control {
+    display: flex;
+    align-items: center;
+}
+
+.sort-control label {
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.skill-box {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.skill-icon i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.skill-box h2 {
+    margin-bottom: 1rem;
+}
+
+.skill-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-box li {
+    margin: 0.75rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }

@@ -1,37 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" class="dark-mode">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Dr. Sanket Mishra - Portfolio</title>
+    <title>Home - Dr. Sanket Mishra</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
 </head>
+
 <body>
-<header>
-    <nav>
-        <div class="logo">Dr. Sanket Mishra</div>
-        <div class="nav-links">
-            <a href="index.html" class="active">Home</a>
-            <a href="publications.html">Publications</a>
-            <a href="teaching.html">Teaching</a>
-            <a href="achievements.html">Achievements</a>
-            <a href="contact.html">Contact</a>
-            <button id="theme-toggle">
-                <i class="fas fa-sun"></i>
-            </button>
-        </div>
-        <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
-    </nav>
-</header>
+
+<header id="header-include"></header>
 
 <main>
-    <!-- Hero / Profile Section -->
     <section class="hero">
         <div class="profile-container">
-            <!-- Replace with your actual photo -->
             <img src="assets/images/profile.jpeg" alt="Dr. Sanket Mishra" class="profile-image"/>
             <div class="profile-info">
                 <h1>Dr. Sanket Mishra</h1>
@@ -43,30 +26,25 @@
 
                 <div class="social-links">
                     <a href="mailto:sanketmishra@live.com" title="Email"><i class="fas fa-envelope"></i></a>
-                    <!-- Replace '#' with your actual profile links -->
-                    <a href="#" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-                    <a href="#" title="ORCID"><i class="fab fa-orcid"></i></a>
-                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=LkngaM4AAAAJ" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="https://orcid.org/0000-0002-3193-8160" title="ORCID"><i class="fab fa-orcid"></i></a>
+                    <a href="https://www.linkedin.com/in/sanketmishra1/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.researchgate.net/profile/Sanket-Mishra" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- News Ticker -->
     <section class="news-ticker">
         <h2>Latest News</h2>
         <div class="ticker-content">
             <div class="ticker-items">
-                <span>Invited Talk at IIIT Guwahati on Serverless Computing</span>
-                <span>New Publication Accepted in IEEE Access</span>
-                <span>Early Research Grant received for IoT-based Water Quality Monitoring</span>
-                <span>Presenting at International Conference 2025</span>
+                <span>Streamlined Data Pipeline for Real-Time Threat Detection and Model Inference presented at COMSNETS 2025</span>
+                <span>AURA: Adaptive Unified Real-Time Analytics for IoT Intrusion Detection presented in IEEE ANTS 20224</span>
             </div>
         </div>
     </section>
 
-    <!-- Biography -->
     <section class="biography">
         <h2>Biography</h2>
         <p>
@@ -85,30 +63,13 @@
     </section>
 </main>
 
-<footer>
-    <div class="footer-content">
-        <div class="footer-section">
-            <h3>Contact</h3>
-            <p>Email: sanketmishra@live.com</p>
-            <p>Office: Building A, Room 123</p>
-        </div>
-        <div class="footer-section">
-            <h3>Quick Links</h3>
-            <a href="publications.html">Publications</a>
-            <a href="teaching.html">Teaching</a>
-            <a href="achievements.html">Achievements</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 Dr. Sanket Mishra. All rights reserved.</p>
-    </div>
-</footer>
+<footer id="footer-include"></footer>
 
 <button id="scroll-top" title="Go to top">
     <i class="fas fa-arrow-up"></i>
 </button>
 
 <script src="js/main.js"></script>
+
 </body>
 </html>
